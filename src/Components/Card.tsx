@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Emoji } from '../App'
 
-import popUpSound from '../Assets/popup-effect.mp3'
+import popUpSound from '../Assets/sound.mp3'
 
 
 type Props = Emoji;
@@ -43,6 +43,10 @@ export default function Card({ symbol, keywords, title }: Props) {
         <img src={`https://emojicdn.elk.sh/${symbol}`} />
         <h2 className='title'>{title}</h2>
         <p className='keyword'>{keywords}</p>
+
+        
+          <span className="tooltiptext">Click To Copy emoji</span>
+        
 
         <>
           {isCopied ?

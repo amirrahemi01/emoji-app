@@ -363,6 +363,7 @@ input::placeholder {
 }
 
 .active {opacity: 1;}
+
 .notactive {opacity: 0;}
 
 /* tooltip box */

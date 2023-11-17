@@ -1,13 +1,21 @@
 import React, { useState } from 'react'
 import { Emoji } from '../App'
 
+import popUpSound from '../Assets/popup-effect.mp3'
+
 
 type Props = Emoji;
 
 export default function Card({ symbol, keywords, title }: Props) {
+
   // copy emoji to clipboard
   const [isCopied, setIsCopied] = useState(false);
+  const popUp = new Audio(popUpSound);
+  popUp.volume = 0.5;
+
   function copyEmoji(e: string) {
+    popUp.play();
+
     return navigator.clipboard.writeText(symbol)
       .then(() => {
         // If successful, update the isCopied state value
@@ -40,8 +48,8 @@ export default function Card({ symbol, keywords, title }: Props) {
           {isCopied ?
             <div className='copied-box'>
               <div className='copied-items'>
-              <img src={`https://emojicdn.elk.sh/${symbol}`} />
-              <p>Copied!</p>
+                <img src={`https://emojicdn.elk.sh/${symbol}`} />
+                <p>Copied!</p>
               </div>
             </div>
             :

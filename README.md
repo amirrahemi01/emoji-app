@@ -19,6 +19,8 @@ when hover = "copiy emoji snippest" (tooltip) +
 
 check emoji exist in cdn server +
 
+onError image .then remove src 
+
 responsive
 
 router

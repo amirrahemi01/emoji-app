@@ -1,19 +1,30 @@
 onclick copy emoji x
+
 ios emoji x
+
 search bar x
+
 pagination x
+
 title for emoji x
+
 use emoji api x
+
 clear search input x
+
 
 shake image on hover x
 
 when hover = "copiy emoji snippest" (tooltip) +
+
 check emoji exist in cdn server +
 
 responsive
+
 router
+
 toggle dark mode
+
 
 web application mainfest.json
 

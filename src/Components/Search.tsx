@@ -1,6 +1,6 @@
 import { faX, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 
 type Props = {
   search: (text: string) => void;
@@ -24,6 +24,7 @@ export default function Search({ search, pageChoose }: Props) {
         <div className='search-bar'>
           <input
             ref={ref}
+            type="text"
             className='search-bar'
             placeholder='Search Emoji'
             onChange={({ target }) => {
@@ -32,8 +33,19 @@ export default function Search({ search, pageChoose }: Props) {
             }}
           />
 
-          <button type="button" className='clear-btn' onClick={onClear}>
-          <FontAwesomeIcon icon={faXmark} />
+          <button
+            type="button"
+            className='clear-btn'
+            onClick={({ target }) => {
+              search((target as HTMLInputElement).value = "");
+              onClear();
+            }}
+
+            // onClick={() => { function1(); function2(); }}
+            >
+
+            <FontAwesomeIcon icon={faXmark} />
+
           </button>
         </div>
       </div>

@@ -358,8 +358,12 @@ input::placeholder {
   align-items: center;
   border-radius: 1rem;
   z-index: 1;
+  opacity: 0;
   transition: var(--transition);
 }
+
+.active {opacity: 1;}
+.notactive {opacity: 0;}
 
 /* tooltip box */
 .card-container {

@@ -1,4 +1,6 @@
-import React from 'react'
+import { faX, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useRef } from 'react'
 
 type Props = {
   search: (text: string) => void;
@@ -7,17 +9,33 @@ type Props = {
 
 export default function Search({ search, pageChoose }: Props) {
 
+  // clear input field
+  const ref = useRef<HTMLInputElement>(null);
+
+  const onClear = () => {
+    if (ref.current) {
+      ref.current.value = "";
+    }
+  };
+
   return (
     <>
       <div className='search-container'>
-        <input
-          className='search-bar'
-          placeholder='Search Emoji'
-          onChange={({ target }) => {
-            pageChoose(1);
-            search(target.value);
-          }}
-        />
+        <div className='search-bar'>
+          <input
+            ref={ref}
+            className='search-bar'
+            placeholder='Search Emoji'
+            onChange={({ target }) => {
+              pageChoose(1);
+              search(target.value);
+            }}
+          />
+
+          <button type="button" className='clear-btn' onClick={onClear}>
+          <FontAwesomeIcon icon={faXmark} />
+          </button>
+        </div>
       </div>
     </>
   )

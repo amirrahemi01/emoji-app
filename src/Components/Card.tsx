@@ -35,11 +35,18 @@ export default function Card({ symbol, keywords, title }: Props) {
         <img src={`https://emojicdn.elk.sh/${symbol}`} />
         <h2 className='title'>{title}</h2>
         <p className='keyword'>{keywords}</p>
-        <span>{isCopied ? <>
-          <img src={`https://emojicdn.elk.sh/${symbol}`} />
-          <p>Copied!</p>
+
+        <>
+          {isCopied ?
+            <div className='copied-box'>
+              <div className='copied-items'>
+              <img src={`https://emojicdn.elk.sh/${symbol}`} />
+              <p>Copied!</p>
+              </div>
+            </div>
+            :
+            ''}
         </>
-          : ''}</span>
       </div>
     </>
   )

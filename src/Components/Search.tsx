@@ -1,4 +1,4 @@
-import { faX, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faX, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useRef, useState } from 'react'
 
@@ -22,11 +22,12 @@ export default function Search({ search, pageChoose }: Props) {
     <>
       <div className='search-container'>
         <div className='search-bar'>
+
           <input
             ref={ref}
             type="text"
             className='search-bar'
-            placeholder='Search Emoji'
+            placeholder='&#128269; Search Emoji'
             onChange={({ target }) => {
               pageChoose(1);
               search(target.value);

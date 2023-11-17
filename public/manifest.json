@@ -1,12 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Emoji",
+  "name": "amirrahemi emoji platform",
   "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
     {
       "src": "logo192.png",
       "type": "image/png",
@@ -18,8 +13,16 @@
       "sizes": "512x512"
     }
   ],
+
+  "related_applications": [
+    {
+      "platform": "github",
+      "url": "https://amirrahemi01.github.io/Rock-Paper-Scissors-Game/"
+    }
+  ],
   "start_url": ".",
   "display": "standalone",
+  "description": "a Tic Tac Toe with TypeScrip.",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }

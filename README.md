@@ -12,21 +12,21 @@ use emoji api x
 
 clear search input x
 
-
 shake image on hover x
 
 when hover = "copiy emoji snippest" (tooltip) +
 
 check emoji exist in cdn server +
 
-onError image .then remove src 
+loader 
+
+onError image .then remove src
 
 responsive
 
 router
 
 toggle dark mode
-
 
 web application mainfest.json
 
@@ -48,9 +48,15 @@ add some image for buty.
 
 dis allow/ disable onclick for copied box
 
-refactor code and take comment
-
 کوچیک کردن کد و تبدیل بیشتر به کامپوننت
+
+onclick emoji: open router or new page and define some new thing
+
+tag amirrahemi anywhere isposibble
+
+gif & screen shot for readme page
+
+refactor code and take comment
 
 ..
 

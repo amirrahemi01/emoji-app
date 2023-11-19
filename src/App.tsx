@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 // components
 
 import useFetchHook from './Hooks/useFetchHook';
 import useSearch from './Hooks/useSearch';
 import usePagination from './Hooks/usePagination';
+import useLoader from './Hooks/useLoader';
 
 import './App.css';
 import Header from './Components/Header';
 import Search from './Components/Search';
 import Main from './Components/Main';
 import Footer from './Components/Footer';
+import Loader from './Components/Loader';
 
 
 export type Emoji = {
@@ -20,6 +22,13 @@ export type Emoji = {
 };
 
 function App() {
+
+  // loader
+  // const [loading, setLoading] = useState(true)
+
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(false), 3000)
+  // }, [])
 
   // call API 
   const fetchData = useFetchHook();
@@ -36,8 +45,12 @@ function App() {
     emojiList,
   } = usePagination(filteredEmoji);
 
+  // loader
+  const loading = useLoader();
+
   return (
     <>
+          {loading && <Loader />}
       <div className="app-container">
         {/* <img src="logo512.png" /> */}
         <Header />

@@ -4,6 +4,8 @@ import { Emoji } from '../App'
 import popUpSound from '../Assets/sound.mp3'
 import axios from 'axios';
 import OnePixel from '../Assets/1x1.png'
+import Loader from './Loader';
+import useLoader from '../Hooks/useLoader';
 
 
 type Props = Emoji;
@@ -16,6 +18,7 @@ export default function Card({ symbol, keywords, title }: Props) {
   popUp.volume = 0.5;
 
   const [active, setActive] = useState(true);
+
 
   function copyEmoji(e: string) {
     popUp.play();
@@ -46,12 +49,6 @@ export default function Card({ symbol, keywords, title }: Props) {
 
   // check emoji exist in cdn server
 
-  type CheckImageArgs = {
-    imageSrc: string;
-    good: () => void;
-    bad: () => void;
-  };
-
   async function CheckImage(path: string): Promise<boolean> {
     try {
       await axios.get(path);
@@ -65,21 +62,31 @@ export default function Card({ symbol, keywords, title }: Props) {
 
   useEffect(() => {
     CheckImage(`https://emojicdn.elk.sh/${symbol}`).then(setImageExists);
+    
   }, []);
 
 
+  const loading = useLoader();
+
+
+          
+
   return (
     <>
+    
+    {loading && <Loader />}
+
+    
       <div className='card-container'
         onClick={() => copyEmoji(symbol)}
       >
         {/* <p className='symbol'>https://emojicdn.elk.sh/{symbol}</p> */}
         {imageExists ? "" : <p style={{ fontSize: '2.5rem' }}>{symbol}</p>}
         <img
-          // src={`https://emojicdn.elk.sh/${symbol}`}
-          alt={symbol}
+          src={`https://emojicdn.elk.sh/${symbol}`}
+          // alt={symbol}
 
-          src={imageExists ? `https://emojicdn.elk.sh/${symbol}` : OnePixel}  onError={(event) => (event.target as HTMLImageElement).style.display = 'none'}
+          // src={imageExists ? `https://emojicdn.elk.sh/${symbol}` : OnePixel}  onError={(event) => (event.target as HTMLImageElement).style.display = 'none'}
         />
         <h2 className='title'>{title}</h2>
         <p className='keyword'>{keywords}</p>
@@ -87,18 +94,17 @@ export default function Card({ symbol, keywords, title }: Props) {
 
         <span className="tooltiptext">Click To Copy emoji</span>
 
-
         <>
           {isCopied ?
             <div className={`copied-box ${active ? 'active' : 'notactive'}`}>
               <div className='copied-items'>
                 {imageExists ? "" : <p style={{ fontSize: '2.5rem' }}>{symbol}</p>}
                 <img
-                  // src={`https://emojicdn.elk.sh/${symbol}`}
+                  src={`https://emojicdn.elk.sh/${symbol}`}
                   alt={symbol}
 
-                  src={imageExists ? `https://emojicdn.elk.sh/${symbol}` : OnePixel}
-                  onError={(event) => (event.target as HTMLImageElement).style.display = 'none'}
+                  // src={imageExists ? `https://emojicdn.elk.sh/${symbol}` : OnePixel}
+                  // onError={(event) => (event.target as HTMLImageElement).style.display = 'none'}
                 />
 
                 <p>Copied!</p>

@@ -18,9 +18,9 @@ when hover = "copiy emoji snippest" (tooltip) +
 
 check emoji exist in cdn server +
 
-loader 
+loader + - add for card with props and hooks
 
-onError image .then remove src
+onError image .then remove src +
 
 responsive
 
@@ -28,7 +28,7 @@ router
 
 toggle dark mode
 
-web application mainfest.json
+web application mainfest.json +
 
 start page:
 

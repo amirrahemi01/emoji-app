@@ -62,32 +62,44 @@ export default function Card({ symbol, keywords, title }: Props) {
 
   useEffect(() => {
     CheckImage(`https://emojicdn.elk.sh/${symbol}`).then(setImageExists);
-    
+
   }, []);
 
 
   const loading = useLoader();
 
 
-          
+  function Emoji() {
+    return (
+      <>
+        {imageExists
+          ?
+          <>
+            <img
+              src={`https://emojicdn.elk.sh/${symbol}`}
+              alt={symbol}
+            />
+          </>
+          :
+          <>
+            <p className='shake-emoji' style={{ fontSize: '2.5rem' }}>{symbol}</p>
+            <br />
+          </>
+        }
+      </>
+    )
+  }
+
 
   return (
     <>
-    
-    {loading && <Loader />}
 
-    
       <div className='card-container'
         onClick={() => copyEmoji(symbol)}
       >
-        {/* <p className='symbol'>https://emojicdn.elk.sh/{symbol}</p> */}
-        {imageExists ? "" : <p style={{ fontSize: '2.5rem' }}>{symbol}</p>}
-        <img
-          src={`https://emojicdn.elk.sh/${symbol}`}
-          // alt={symbol}
 
-          // src={imageExists ? `https://emojicdn.elk.sh/${symbol}` : OnePixel}  onError={(event) => (event.target as HTMLImageElement).style.display = 'none'}
-        />
+        <Emoji />
+
         <h2 className='title'>{title}</h2>
         <p className='keyword'>{keywords}</p>
 
@@ -98,13 +110,14 @@ export default function Card({ symbol, keywords, title }: Props) {
           {isCopied ?
             <div className={`copied-box ${active ? 'active' : 'notactive'}`}>
               <div className='copied-items'>
-                {imageExists ? "" : <p style={{ fontSize: '2.5rem' }}>{symbol}</p>}
+                {/* {imageExists ? "" : <p style={{ fontSize: '2.5rem' }}>{symbol}</p>} */}
                 <img
                   src={`https://emojicdn.elk.sh/${symbol}`}
-                  alt={symbol}
+                  // alt={symbol}
+                  alt={imageExists ? "aa" : "a"}
 
-                  // src={imageExists ? `https://emojicdn.elk.sh/${symbol}` : OnePixel}
-                  // onError={(event) => (event.target as HTMLImageElement).style.display = 'none'}
+                // src={imageExists ? `https://emojicdn.elk.sh/${symbol}` : OnePixel}
+                // onError={(event) => (event.target as HTMLImageElement).style.display = 'none'}
                 />
 
                 <p>Copied!</p>

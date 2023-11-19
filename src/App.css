@@ -72,8 +72,8 @@ header .app-container img {
 .header-container {
   background-color: var(--bg-color);
   color: var(--main-color);
-  padding: 10px;
-  margin: 10px 0;
+  padding: 0;
+  margin: 0;
   width: 90%;
   border-radius: 1rem;
 }
@@ -182,7 +182,7 @@ input::placeholder {
   margin: 0 0 6px 0;
 }
 
-.card-container img:hover {
+.card-container img:hover, .shake-emoji:hover {
   animation: shake 0.7s;
   animation-iteration-count: 30s;
 }

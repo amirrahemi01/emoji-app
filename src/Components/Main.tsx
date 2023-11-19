@@ -7,8 +7,8 @@ type Props = {
 }
 
 export default function Main({ emojiList }: Props) {
-  
   return (
+  
     <main className='wrapper'>
       {emojiList.map((e) => (
         <Card {...e} key={e.title} />

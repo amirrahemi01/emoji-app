@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
-// components
 
-import useFetchHook from './Hooks/useFetchHook';
-import useSearch from './Hooks/useSearch';
-import usePagination from './Hooks/usePagination';
-import useLoader from './Hooks/useLoader';
 
 import './App.css';
-import Header from './Components/Header';
-import Search from './Components/Search';
-import Main from './Components/Main';
-import Footer from './Components/Footer';
-import Loader from './Components/Loader';
+
+import { Route, Routes } from 'react-router-dom';
+import Starter from './Page/Starter';
+import Emoji from './Page/Emoji';
 
 
 export type Emoji = {
@@ -23,50 +17,19 @@ export type Emoji = {
 
 function App() {
 
-  // loader
-  // const [loading, setLoading] = useState(true)
 
-  // useEffect(() => {
-  //   setTimeout(() => setLoading(false), 3000)
-  // }, [])
-
-  // call API 
-  const fetchData = useFetchHook();
-
-  // search
-  const { filteredEmoji, setSearchValue } = useSearch(fetchData);
-
-  // pagination and selecting the number of cards displayed
-  const {
-    currentPage,
-    setCurrentPage,
-    emojiPerPage,
-    setEmojiPerPage,
-    emojiList,
-  } = usePagination(filteredEmoji);
-
-  // loader
-  const loading = useLoader();
 
   return (
     <>
-          {loading && <Loader />}
-      <div className="app-container">
-        {/* <img src="logo512.png" /> */}
-        <Header />
-        <Search
-          search={setSearchValue}
-          pageChoose={setCurrentPage}
-        />
-        <Main emojiList={emojiList} />
-        <Footer 
-          currentPage={currentPage}
-          pageChoose={setCurrentPage}
-          emojiPerPage={emojiPerPage}
-          allEmoji={filteredEmoji}
-          selectPerPage={setEmojiPerPage}
-        />
-      </div>
+
+      <Routes>
+        <Route path='/' element={<Starter />} />
+        <Route path='Game' element={<Starter />} />
+        <Route path='Emoji' element={<Emoji />} />
+        <Route path='TermOfService' element={<Starter />} />
+        <Route path='PrivacyPolicy' element={<Starter />} />
+        <Route path='*' element={<Starter />} />
+      </Routes>
     </>
   );
 }

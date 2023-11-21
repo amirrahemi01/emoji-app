@@ -2,18 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-:root {
-  /* colors */
-  --bg-color: #000;
-  --main-color: #fff6f6;
-
-  --card-bg: #1d1d1d;
-  --card-color: #c9c9c9;
-  --copy-bg-color: #ffffff9e;
-
-  /* transition */
-  --transition: 0.3s ease-in;
-}
+@import './Root.css';
 
 ::-webkit-scrollbar {
   width: 7px;
@@ -39,8 +28,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
 
 body {
   background: var(--bg-color);
@@ -172,10 +159,6 @@ input::placeholder {
   color: var(--card-color);
   transition: var(--transition);
 }
-
-/* .card-container:hover {
-    transform: scale(1.08);
-} */
 
 .card-container img {
   width: 50px;
@@ -389,8 +372,6 @@ input::placeholder {
   opacity: 0;
   font-size: 12px;
   transition: var(--transition);
-
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
   top: 100%;
@@ -449,7 +430,7 @@ input::placeholder {
   box-shadow: -6px -6px 11px #c1c1c1, 6px 6px 11px #ffffff;
   transform: scale(0);
   opacity: 0.5;
-  animation: pulse0112 calc(var(--uib-speed) * 1.111) ease-in-out infinite;
+  animation: dot-animation calc(var(--uib-speed) * 1.111) ease-in-out infinite;
   box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);
 }
 
@@ -520,7 +501,7 @@ input::placeholder {
   animation-delay: calc(var(--uib-speed) * -0.125);
 }
 
-@keyframes pulse0112 {
+@keyframes dot-animation {
 
   0%,
   100% {

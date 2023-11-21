@@ -40,9 +40,9 @@ change api and use best api's
 
 add readme.md
 
-soundeffect
+soundeffect +
 
-search icon for input search
+search icon for input search +
 
 add some image for buty.
 
@@ -55,6 +55,10 @@ onclick emoji: open router or new page and define some new thing
 tag amirrahemi anywhere isposibble
 
 gif & screen shot for readme page
+
+slider for image in background/container
+
+no selection for text and media
 
 refactor code and take comment
 

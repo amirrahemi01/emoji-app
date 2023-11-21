@@ -1,0 +1,30 @@
+@import '../Root.css';
+
+/* starter.js */
+.container {
+  width: 100%;
+  background: #82b3ff;
+  background: linear-gradient(90deg, #82b3ff 0%, #3c88ff 38%, #7b00eb 100%);
+  display: flex;
+  position: relative;
+}
+
+.left, .right {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  width: 50%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

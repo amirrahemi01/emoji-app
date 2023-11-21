@@ -1,0 +1,17 @@
+:root {
+    /* colors */
+    --bg-color: #000;
+    --main-color: #fff6f6;
+  
+    --card-bg: #1d1d1d;
+    --card-color: #c9c9c9;
+    --copy-bg-color: #ffffff9e;
+
+    /* starter pages */
+    --starter-center: #2bced3;
+    --starter-left: #008185;
+    --starter-right: #90c6c8;
+  
+    /* transition */
+    --transition: 0.3s ease-in;
+  }

@@ -10,6 +10,9 @@ import Search from '../Components/Search';
 import Main from '../Components/Main';
 import Footer from '../Components/Footer';
 import Loader from '../Components/Loader';
+import Toggle from '../Components/Toggle';
+
+import a from './Pages.module.css'
 
 function Emoji() {
 
@@ -42,12 +45,15 @@ function Emoji() {
         <>
             {loading && <Loader />}
             <div className="app-container">
-                {/* <img src="logo512.png" /> */}
+                <div className={a.search_toggle}>
+                    <Toggle />
+                </div>
                 <Header />
                 <Search
                     search={setSearchValue}
                     pageChoose={setCurrentPage}
                 />
+                {/* <img src="logo512.png" /> */}
                 <Main emojiList={emojiList} />
                 <Footer
                     currentPage={currentPage}

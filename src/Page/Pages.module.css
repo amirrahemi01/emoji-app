@@ -3,8 +3,8 @@
 /* starter.js */
 .container {
   width: 100%;
-  background: #82b3ff;
-  background: linear-gradient(90deg, #12100E 0%, #28313B 38%, #1E3B70 100%);
+  background: #120f0d;
+  background: linear-gradient(90deg, var(--container-1) 0%, var(--container-2) 38%, var(--container-3) 100%);
   display: flex;
   position: relative;
 }
@@ -37,7 +37,7 @@
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   background: #0098CF;
-  background: linear-gradient(to right, #0098CF 10%, #00CF8A 100%);
+  background: linear-gradient(to right, var(--right-gradient-1) 10%, var(--right-gradient-2) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -61,8 +61,8 @@
   outline: none;
   border: none;
   border-radius: 10px;
-  background: #15a6db;
-  color: #ffffff;
+  background: var(--right-btn);
+  color: var(--main-color);
   padding: 1rem 1.5rem;
   font-size: 1.1rem;
   font-weight: bolder;
@@ -73,7 +73,7 @@
 }
 
 .btn:hover {
-  background: #00CE8D;
+  background: var(--right-btn-hover);
 }
 
 .link_btn {
@@ -171,4 +171,13 @@ img.third {
   color: var(--main-color);
   padding: 0 5px;
   transition: var(--transition);
+}
+
+/* Emoji.js */
+.search_toggle {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 1rem;
 }

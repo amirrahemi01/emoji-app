@@ -1,4 +1,19 @@
-:root {
+/* :root {
+    --bg-color: #000;
+    --main-color: #fff6f6;
+  
+    --card-bg: #1d1d1d;
+    --card-color: #c9c9c9;
+    --copy-bg-color: #ffffff9e;
+
+    --starter-center: #2bced3;
+    --starter-left: #008185;
+    --starter-right: #90c6c8;
+    --transition: 0.3s ease-in;
+  } */
+
+
+  .dark-theme {
     /* colors */
     --bg-color: #000;
     --main-color: #fff6f6;
@@ -11,7 +26,23 @@
     --starter-center: #2bced3;
     --starter-left: #008185;
     --starter-right: #90c6c8;
+
+    --transition: 0.3s ease-in;
+  }
   
-    /* transition */
+  .light-theme {
+    /* colors */
+    --bg-color: #fff;
+    --main-color: #000;
+  
+    --card-bg: #1d1d1d;
+    --card-color: #c9c9c9;
+    --copy-bg-color: #ffffff9e;
+
+    /* starter pages */
+    --starter-center: #02f7ff;
+    --starter-left: #00bcc3;
+    --starter-right: #7de4e7;
+
     --transition: 0.3s ease-in;
   }

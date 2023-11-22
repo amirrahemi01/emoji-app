@@ -8,6 +8,7 @@ import Image6 from '../Assets/7.png'
 import Image7 from '../Assets/8.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import Toggle from '../Components/Toggle';
 
 
 
@@ -56,6 +57,8 @@ function Starter() {
                 <FontAwesomeIcon icon={faGithub} />
                 <a className={a.atag} href='https://github.com/amirrahemi01/emoji-app' target='_blank'>GitHub</a>
             </div>
+
+            <Toggle />
 
         </div>
     )

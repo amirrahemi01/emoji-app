@@ -58,7 +58,7 @@ gif & screen shot for readme page
 
 slider for image in background/container +
 
-no selection for text and media 
+no selection for text and media +
 
 refactor code and take comment
 

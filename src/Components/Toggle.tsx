@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
+type Props = {
+    onChange: () => void;
+}
+
 function Toggle() {
     // const getStorageTheme = () => {
     //     let theme = 'light-theme';
@@ -27,22 +31,22 @@ function Toggle() {
     // }, [theme]);
 
     if (document.documentElement.className = "null") {
-        document.documentElement.className = "light-theme";
+        document.documentElement.className = "light";
     }
 
     function setDarkMode() {
-        document.documentElement.className = "dark-theme";
-        localStorage.setItem("selectedThemeType", "dark-theme");
+        document.documentElement.className = "dark";
+        localStorage.setItem("selectedThemeType", "dark");
     }
 
     function setLightMode() {
-        document.documentElement.className = "light-theme";
-        localStorage.setItem("selectedThemeType", "light-theme");
+        document.documentElement.className = "light";
+        localStorage.setItem("selectedThemeType", "light");
     }
 
     const selectedTheme = localStorage.getItem("selectedThemeType");
 
-    if (selectedTheme === "dark-theme") {
+    if (selectedTheme === "dark") {
         setDarkMode();
     }
 
@@ -59,17 +63,15 @@ function Toggle() {
         //     </label>
         // </div>
 
-        <div className='toggle-switch'>
-            <label>
-                <input 
-                        onChange={toggleTheme}
-                        defaultChecked={selectedTheme === 'dark'}
-                        className="theme-switch"
-                        type="checkbox" id="switch"
-                />
-                    <span className='slider'></span>
-            </label>
-        </div>
+        <>
+            <input
+                onChange={toggleTheme}
+                defaultChecked={selectedTheme === 'dark'}
+                className="theme-switch"
+                type="checkbox" id="switch"
+            />
+            <label className="theme-switch" htmlFor="switch">Toggle</label>
+        </>
     )
 }
 

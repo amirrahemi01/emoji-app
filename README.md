@@ -24,13 +24,13 @@ onError image .then remove src +
 
 responsive
 
-router
+router +
 
 toggle dark mode
 
 web application mainfest.json +
 
-start page:
+start page: +
 
 از بالا تا پایین چندتا ایموجی بیاد و مثل انیمشین و ه بعدی بشه
 
@@ -52,13 +52,13 @@ dis allow/ disable onclick for copied box
 
 onclick emoji: open router or new page and define some new thing
 
-tag amirrahemi anywhere isposibble
+tag amirrahemi github anywhere isposibble +
 
 gif & screen shot for readme page
 
-slider for image in background/container
+slider for image in background/container +
 
-no selection for text and media
+no selection for text and media 
 
 refactor code and take comment
 

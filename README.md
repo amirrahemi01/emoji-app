@@ -22,17 +22,26 @@ loader + - add for card with props and hooks
 
 onError image .then remove src +
 
-responsive
+slider for image in background/container +
+
+no selection for text and media +
 
 router +
-
-toggle dark mode
 
 web application mainfest.json +
 
 start page: +
 
-از بالا تا پایین چندتا ایموجی بیاد و مثل انیمشین و ه بعدی بشه
+soundeffect +
+
+search icon for input search +
+
+tag amirrahemi github anywhere isposibble +
+
+toggle dark mode
+
+responsive
+
 
 fixed nav bar like mobile (switch routers)
 
@@ -40,9 +49,7 @@ change api and use best api's
 
 add readme.md
 
-soundeffect +
-
-search icon for input search +
+game page 
 
 add some image for buty.
 
@@ -52,20 +59,7 @@ dis allow/ disable onclick for copied box
 
 onclick emoji: open router or new page and define some new thing
 
-tag amirrahemi github anywhere isposibble +
-
 gif & screen shot for readme page
-
-slider for image in background/container +
-
-no selection for text and media +
 
 refactor code and take comment
 
-..
-
-..
-.
-
-....
-..

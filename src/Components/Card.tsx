@@ -111,14 +111,7 @@ export default function Card({ symbol, keywords, title }: Props) {
             <div className={`copied-box ${active ? 'active' : 'notactive'}`}>
               <div className='copied-items'>
                 {/* {imageExists ? "" : <p style={{ fontSize: '2.5rem' }}>{symbol}</p>} */}
-                <img
-                  src={`https://emojicdn.elk.sh/${symbol}`}
-                  // alt={symbol}
-                  alt={imageExists ? "aa" : "a"}
-
-                // src={imageExists ? `https://emojicdn.elk.sh/${symbol}` : OnePixel}
-                // onError={(event) => (event.target as HTMLImageElement).style.display = 'none'}
-                />
+                <Emoji />
 
                 <p>Copied!</p>
               </div>

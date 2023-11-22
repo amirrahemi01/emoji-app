@@ -38,7 +38,7 @@ search icon for input search +
 
 tag amirrahemi github anywhere isposibble +
 
-toggle dark mode
+toggle dark mode +
 
 responsive
 
@@ -60,6 +60,8 @@ dis allow/ disable onclick for copied box
 onclick emoji: open router or new page and define some new thing
 
 gif & screen shot for readme page
+
+change colors and fixed root variables
 
 refactor code and take comment
 

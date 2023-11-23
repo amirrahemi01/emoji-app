@@ -537,8 +537,8 @@ input::placeholder {
 .theme-switch {
   cursor: pointer;
   text-indent: -9999px;
-  width: 50px;
-  height: 30px;
+  width: 52px;
+  height: 31px;
   background: #585858;
   display: block;
   border-radius: 100px;
@@ -552,8 +552,8 @@ input::placeholder {
   position: absolute;
   top: 5px;
   left: 3px;
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
   background: #fff;
   border-radius: 90px;
   transition: var(--transition);

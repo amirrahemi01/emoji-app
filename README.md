@@ -83,7 +83,6 @@ dis allow/ disable onclick for copied box
 
 کوچیک کردن کد و تبدیل بیشتر به کامپوننت
 
-onclick emoji: open router or new page and define some new thing
 
 gif & screen shot for readme page
 

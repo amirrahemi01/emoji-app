@@ -68,7 +68,9 @@ Check Demo <a href="https://amirrahemi-countdown.vercel.app/" target="_blank">DE
 
 ## Run 
 
+```
 npm i && npm start
+```
 
 
 responsive

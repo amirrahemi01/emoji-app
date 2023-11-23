@@ -5,31 +5,6 @@ type Props = {
 }
 
 function Toggle() {
-    // const getStorageTheme = () => {
-    //     let theme = 'light-theme';
-    //     if (localStorage.getItem('theme')) {
-    //         theme = localStorage.getItem('theme') || 'light-theme';
-    //     }
-    //     return theme;
-    // };
-    // const [theme, setTheme] = useState(getStorageTheme());
-
-    // const toggleTheme = () => {
-    //     if (theme === 'light-theme') {
-    //         setTheme('dark-theme');
-    //     } else {
-    //         setTheme('light-theme');
-    //     }
-    // };
-
-    // useEffect(() => {
-    //     // Remove the previous theme class
-    //     document.documentElement.classList.remove('light-theme', 'dark-theme');
-    //     // Add the current theme class
-    //     document.documentElement.classList.add(theme);
-    //     localStorage.setItem('theme', theme);
-    // }, [theme]);
-
     if (document.documentElement.className = "null") {
         document.documentElement.className = "light";
     }
@@ -56,13 +31,6 @@ function Toggle() {
     }
 
     return (
-        // <div onClick={toggleTheme} className='toggle-switch'>
-        //         <input type='checkbox' onClick={toggleTheme}></input>
-        //     <label onClick={toggleTheme} className='toggle-switch-lable' htmlFor="toggle-switch-lable">
-        //         <span className='slider' onClick={toggleTheme}></span>
-        //     </label>
-        // </div>
-
         <>
             <input
                 onChange={toggleTheme}

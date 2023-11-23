@@ -26,14 +26,8 @@ The repository could showcase various features, such as:
 > - [x] Router Paes
 > - [x] WPA
 > - [x] Toggle Dark OR Light Mode
-> - [x] Easy, Medium, Expert, Master, Mode For Game
-> - [x] Responsive
-> - [x] Responsive
-> - [x] Responsive
-> - [x] Responsive
-> - [x] Responsive
-> - [x] Responsive
-> - [x] Responsive
+> - [ ] Easy, Medium, Expert, Master, Mode For Game
+
 
 ### Key Features
 
@@ -61,7 +55,6 @@ Check Demo <a href="https://amirrahemi-countdown.vercel.app/" target="_blank">DE
 ## Run 
 
 npm i && npm start
-
 
 
 responsive

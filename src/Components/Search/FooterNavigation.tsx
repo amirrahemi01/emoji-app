@@ -1,5 +1,5 @@
 import React from 'react'
-import { Emoji } from '../App';
+import { Emoji } from '../../App';
 
 type Props = {
   maxIndex: number,

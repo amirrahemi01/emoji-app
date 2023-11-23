@@ -32,6 +32,9 @@
     --card-color: #c9c9c9;
     --copy-bg-color: #ffffff9e;
 
+    --footer-bg-color: #1f2334;
+    --footer-color: #fff;
+
     /* starter pages */
     --container-1: #120f0d;
     --container-2: #28313b;
@@ -63,7 +66,10 @@
   
     --card-bg: #fff;
     --card-color: #000;
-    --copy-bg-color: #ffffff9e;
+    --copy-bg-color: #1b1b1b9e;
+
+    --footer-bg-color: #b8d9d4;
+    --footer-color: #000;
 
     /* starter pages */
     --container-1: #b1ffdc;

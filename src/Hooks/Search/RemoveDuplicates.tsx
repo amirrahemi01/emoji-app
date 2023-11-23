@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Emoji } from '../App';
+import type { Emoji } from '../../App';
 
 
 export default function RemoveDuplicates(data: Emoji[]) {

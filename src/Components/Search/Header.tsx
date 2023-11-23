@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Starter from '../Page/Starter';
+import Starter from '../../Page/Starter/Starter';
 
 export default function Header() {
   return (

@@ -1,0 +1,10 @@
+@import '../../Root.css';
+
+/* Emoji.js */
+.search_toggle {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+  }

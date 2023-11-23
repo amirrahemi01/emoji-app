@@ -5,8 +5,8 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 
 import { Route, Routes } from 'react-router-dom';
-import Starter from './Page/Starter';
-import Emoji from './Page/Emoji';
+import Starter from './Page/Starter/Starter';
+import Emoji from './Page/Search/Emoji';
 
 
 export type Emoji = {

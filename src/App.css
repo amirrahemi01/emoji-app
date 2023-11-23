@@ -51,6 +51,8 @@ img {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
   background-color: var(--app-container);
 }
 
@@ -103,7 +105,8 @@ header .title {
 }
 
 .search-bar {
-  width: 90%;
+  display: inherit;
+  width: 100%;
   border-radius: 1rem;
   outline: none;
   border: none;
@@ -155,7 +158,7 @@ input::placeholder {
   gap: 40px 40px;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1111px;
+  max-width: 70%;
 }
 
 .card-container {
@@ -287,8 +290,8 @@ input::placeholder {
 }
 
 .footer-container .button {
-  color: var(--main-color);
-  background-color: var(--bg-color);
+  background-color: var(--footer-bg-color);
+  color: var(--footer-color);
   border: none;
   outline: none;
   padding: 10px 0;
@@ -307,7 +310,7 @@ input::placeholder {
 }
 
 .footer-container .inactive {
-  color: #abb5be;
+  color: #4e4e4e;
   cursor: not-allowed;
 }
 

@@ -42,6 +42,7 @@ toggle dark mode +
 
 responsive
 
+active/focus input with border or chnage color
 
 fixed nav bar like mobile (switch routers)
 
@@ -49,7 +50,7 @@ change api and use best api's
 
 add readme.md
 
-game page 
+game page
 
 add some image for buty.
 
@@ -63,5 +64,6 @@ gif & screen shot for readme page
 
 change colors and fixed root variables
 
-refactor code and take comment
+easy - hard : gameMode
 
+refactor code and take comment

@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import a from './Pages.module.css'
+import a from './Starter.module.css'
 
-import Image5 from '../Assets/6.png'
-import Image6 from '../Assets/7.png'
-import Image7 from '../Assets/8.png'
+import Image5 from '../../Assets/6.png'
+import Image6 from '../../Assets/7.png'
+import Image7 from '../../Assets/8.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import Toggle from '../Components/Toggle';
+import Toggle from '../../Components/Toggle/Toggle';
 
 
 
@@ -33,10 +33,10 @@ function Starter() {
 
                     <span className={a.span}>OR</span>
 
-                        <Link to="Emoji" className={a.link_btn}>                    
+                    <Link to="Emoji" className={a.link_btn}>
                         <button className={a.btn}>
                             Play Game
-                    </button></Link>
+                        </button></Link>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@ function Starter() {
             </div>
 
             <Toggle />
-            
+
 
         </div>
     )

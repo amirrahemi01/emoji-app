@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Emoji } from '../App'
+import { Emoji } from '../../App'
 
-import popUpSound from '../Assets/sound.mp3'
+import popUpSound from '../../Assets/sound.mp3'
 import axios from 'axios';
 import OnePixel from '../Assets/1x1.png'
-import Loader from './Loader';
-import useLoader from '../Hooks/useLoader';
+import Loader from '../Toggle/Toggle';
+import useLoader from '../../Hooks/Search/useLoader';
 
 
 type Props = Emoji;

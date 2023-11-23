@@ -1,4 +1,4 @@
-@import '../Root.css';
+@import '../../Root.css';
 
 /* starter.js */
 .container {
@@ -171,13 +171,4 @@ img.third {
   color: var(--main-color);
   padding: 0 5px;
   transition: var(--transition);
-}
-
-/* Emoji.js */
-.search_toggle {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  padding: 1rem;
 }

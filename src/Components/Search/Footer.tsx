@@ -1,5 +1,5 @@
 import React from 'react'
-import { Emoji } from '../App'
+import { Emoji } from '../../App'
 import FooterNavigation from './FooterNavigation';
 import { all } from 'axios';
 
@@ -43,7 +43,7 @@ export default function Footer({
     <footer className='footer-container'>
       <div className='footer-wrapper'>
         <div className='footer-nav'>
-          <FooterNavigation 
+          <FooterNavigation
             maxIndex={maxIndex}
             currentPage={currentPage}
             startPage={startPage}

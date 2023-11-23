@@ -22,7 +22,6 @@ export default function Search({ search, pageChoose }: Props) {
     <>
       <div className='search-container'>
         <div className='search-bar'>
-
           <input
             ref={ref}
             type="text"
@@ -41,12 +40,8 @@ export default function Search({ search, pageChoose }: Props) {
               search((target as HTMLInputElement).value = "");
               onClear();
             }}
-
-            // onClick={() => { function1(); function2(); }}
-            >
-
+          >
             <FontAwesomeIcon icon={faXmark} />
-
           </button>
         </div>
       </div>

@@ -64,6 +64,7 @@ gif & screen shot for readme page
 
 change colors and fixed root variables
 
-easy - hard : gameMode
+easy - hard : gameMode  easy:6 medium:12 expert: 24 master: 48
+onclick sound
 
 refactor code and take comment

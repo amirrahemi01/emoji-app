@@ -1,4 +1,4 @@
-# Basic-Countdown-Timer
+# EMOJI GAMEAPP
 
 Welcome to the EMOJI GameApp repository!
 
@@ -26,6 +26,7 @@ The repository could showcase various features, such as:
 > - [x] Router Paes
 > - [x] WPA
 > - [x] Toggle Dark OR Light Mode
+> - [x] Float Icons For Starter Page
 > - [ ] Easy, Medium, Expert, Master, Mode For Game
 
 

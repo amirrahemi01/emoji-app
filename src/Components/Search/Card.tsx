@@ -94,7 +94,7 @@ export default function Card({ symbol, keywords, title }: Props) {
   return (
     <>
 
-      <div className='card-container'
+      <li className='emoji-item card-container'
         onClick={() => copyEmoji(symbol)}
       >
 
@@ -119,7 +119,7 @@ export default function Card({ symbol, keywords, title }: Props) {
             :
             ''}
         </>
-      </div>
+      </li>
     </>
   )
 }

@@ -9,10 +9,10 @@ type Props = {
 export default function Main({ emojiList }: Props) {
   return (
 
-    <main className='wrapper'>
+    <ul className='emoji-list-container'>
       {emojiList.map((e) => (
         <Card {...e} key={e.title} />
       ))}
-    </main>
+    </ul>
   )
 }

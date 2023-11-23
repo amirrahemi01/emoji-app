@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.5s;
 }
 
 body {
@@ -32,6 +33,10 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: capitalize;
   transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -102,24 +107,27 @@ header .title {
 }
 
 .search-bar {
-  display: inherit;
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  display: inherit;
+  width: 100% !important;
   border-radius: 1rem;
   outline: none;
-  border: none;
+  border: 1px solid var(--card-bg);
   text-align: center;
   padding: 10px 0;
   font-size: 24px;
   font-weight: 400;
   background: var(--card-bg);
   color: (var(--card-color));
-  transition: var(--transition);
 }
 
-.search-bar input:hover {
-  opacity: .5;
-}
-
+.search-bar input:hover,
 .search-container input::placeholder {
   opacity: .5;
 }
@@ -140,6 +148,9 @@ input::placeholder {
   outline: none;
   cursor: pointer;
   transition: 0.2s;
+  position: absolute;
+  right: 0;
+  margin: 0 2.4rem;
 }
 
 .clear-btn:hover {
@@ -149,28 +160,15 @@ input::placeholder {
 }
 
 /* icons wrapper */
-.wrapper {
-  display: grid;
-  grid-template-columns: 30% 30% 30% 30%;
-  gap: 40px 40px;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 70%;
-}
-
 .card-container {
   padding: 24px;
-  display: flex;
-  justify-content: flex-start;
   border-radius: 25px;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  cursor: pointer;
   background-color: var(--card-bg);
   color: var(--card-color);
   transition: var(--transition);
-  box-shadow: #0000005e 5px 5px 30px;
+  box-shadow: #0000001f 5px 5px 30px;
+  cursor: pointer;
 }
 
 .card-container img {
@@ -178,7 +176,8 @@ input::placeholder {
   margin: 0 0 6px 0;
 }
 
-.card-container img:hover, .shake-emoji:hover {
+.card-container img:hover,
+.shake-emoji:hover {
   animation: shake 0.7s;
   animation-iteration-count: 30s;
 }
@@ -255,7 +254,7 @@ input::placeholder {
   max-width: 1400px;
   margin: 0 auto;
   color: #6c757d;
-  width: 100%;
+  width: 95%;
 }
 
 .footer-wrapper {
@@ -570,6 +569,147 @@ input::placeholder {
   transform: translateX(26px);
 }
 
-.theme-switch:focus + .theme-switch::after {
+.theme-switch:focus+.theme-switch::after {
   box-shadow: 0 0 1px #2196F3;
+}
+
+/* game components */
+.emoji-item {
+  width: 32%;
+  list-style-type: none;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 992px) {
+  .emoji-item {
+    width: 24%;
+  }
+}
+
+.emoji-btn {
+  background-color: var(--card-bg);
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  height: 100px;
+  border: 3px solid #ffffff30;
+  border-radius: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .emoji-btn {
+    height: 200px;
+  }
+}
+
+.emoji-icon {
+  width: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .emoji-icon {
+    width: 100px;
+  }
+}
+
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  background: var(--app-container);
+  min-height: 100vh;
+  transition: var(--transition);
+}
+
+.emoji-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.emoji-list-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding: 0px;
+  max-width: 1000px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff33;
+  padding: 8px;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  width: 85%;
+}
+
+.score-title {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 80%;
+  max-width: 1000px;
+  align-items: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .emoji-logo {
+    width: 48px;
+  }
+}
+
+.logo-title .title {
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  transition: var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .logo-title .title {
+    font-size: 24px;
+  }
+}
+
+.scores-container {
+  display: flex;
+}
+
+.score {
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 16px;
+  transition: var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .score {
+    font-size: 18px;
+    margin-left: 32px;
+  }
+}
+
+
+/* responsive */
+@media screen and (min-width: 400px) {
+  header .title {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+
+  .app-container {
+    background-color: #2196F3;
+  }
 }

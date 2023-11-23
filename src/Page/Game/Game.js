@@ -1,12 +1,13 @@
 import React from 'react';
 import EmojiGame from '../../Components/Game/Game';
+import Toggle from '../../Components/Toggle/Toggle';
 
 const emojiList = [
   {
     id: 0,
     emojiName: 'Face with stuck out tongue',
     emojiUrl:
-      'https://emojicdn.elk.sh/😊',
+      'https://emojicdn.elk.sh/😂',
   },
   {
     id: 1,
@@ -69,15 +70,37 @@ const emojiList = [
     id: 11,
     emojiName: 'Smiling face with star eyes',
     emojiUrl:
-      'https://emojicdn.elk.sh/😊',
+      'https://emojicdn.elk.sh/💣',
   },
+  // {
+  //   id: 12,
+  //   emojiName: 'Grinning face with sweat',
+  //   emojiUrl:
+  //     'https://emojicdn.elk.sh/🐢',
+  // },
+  // {
+  //   id: 13,
+  //   emojiName: 'Smiling face with heart eyes',
+  //   emojiUrl:
+  //     'https://emojicdn.elk.sh/🐣',
+  // },
+  // {
+  //   id: 14,
+  //   emojiName: 'Grinning face',
+  //   emojiUrl: 'https://emojicdn.elk.sh/😊',
+  // },
+  // {
+  //   id: 15,
+  //   emojiName: 'Smiling face with star eyes',
+  //   emojiUrl:
+  //     'https://emojicdn.elk.sh/💣',
+  // },
 ]
 
 function Game() {
   return (
     <div>
       <EmojiGame emojiList={emojiList} />
-      Emoji
     </div>
   )
 }

@@ -537,9 +537,9 @@ input::placeholder {
 .theme-switch {
   cursor: pointer;
   text-indent: -9999px;
-  width: 67px;
-  height: 40px;
-  background: #808080;
+  width: 50px;
+  height: 30px;
+  background: #585858;
   display: block;
   border-radius: 100px;
   position: relative;
@@ -551,16 +551,16 @@ input::placeholder {
   content: '';
   position: absolute;
   top: 5px;
-  left: 5px;
-  width: 30px;
-  height: 30px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
   background: #fff;
   border-radius: 90px;
   transition: var(--transition);
 }
 
 .theme-switch:checked+.theme-switch {
-  background: #3fdb58;
+  background: #087FFF;
 }
 
 .theme-switch:checked+.theme-switch:after {

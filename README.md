@@ -24,7 +24,7 @@ The repository could showcase various features, such as:
 > - [x] OnError IOS Emoji, Show System Emojis
 > - [x] No Drag For Images
 > - [x] Router Paes
-> - [x] WPA
+> - [x] WPAs
 > - [x] Toggle Dark OR Light Mode
 > - [ ] Easy, Medium, Expert, Master, Mode For Game
 

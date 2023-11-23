@@ -10,8 +10,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Toggle from '../../Components/Toggle/Toggle';
 
-
-
 function Starter() {
     return (
         <div className={a.container}>
@@ -24,6 +22,7 @@ function Starter() {
                     <b>Review, Search, Play Game with Emojies</b>
                 </div>
                 <br />
+
                 <div className={a.btn_box}>
                     <Link to="Emoji" className={a.link_btn}>
                         <button className={a.btn}>
@@ -33,7 +32,7 @@ function Starter() {
 
                     <span className={a.span}>OR</span>
 
-                    <Link to="Emoji" className={a.link_btn}>
+                    <Link to="Game" className={a.link_btn}>
                         <button className={a.btn}>
                             Play Game
                         </button></Link>
@@ -59,8 +58,6 @@ function Starter() {
             </div>
 
             <Toggle />
-
-
         </div>
     )
 }

@@ -57,8 +57,10 @@ The repository could showcase various features, such as:
 
 ## Screenshots
 <div>
-  <img width="825" src="https://raw.githubusercontent.com/amirrahemi01/Basic-Countdown-Timer/main/Screenshot.png" style="border-radius: 1rem;">
+  <img width="825" src="Screenshot.png">
 </div>
+
+
 
 ## License
 

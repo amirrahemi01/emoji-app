@@ -1,6 +1,8 @@
 import React from 'react';
 import EmojiGame from '../../Components/Game/Game';
 import Toggle from '../../Components/Toggle/Toggle';
+import useLoader from '../../Hooks/Search/useLoader';
+import Loader from '../../Components/Search/Loader';
 
 const emojiList = [
   {
@@ -97,9 +99,14 @@ const emojiList = [
   // },
 ]
 
+
+
 function Game() {
+  const loading = useLoader();
+  
   return (
     <div>
+      {loading && <Loader />}
       <EmojiGame emojiList={emojiList} />
     </div>
   )

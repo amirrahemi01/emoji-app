@@ -651,10 +651,10 @@ input::placeholder {
 
 .score-title {
   display: flex;
-  justify-content: space-between;
-  flex-basis: 80%;
+  flex-basis: 90%;
   max-width: 1000px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo-title {
@@ -694,6 +694,11 @@ input::placeholder {
   transition: var(--transition);
 }
 
+
+.responsive {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .score {
     font-size: 18px;
@@ -701,15 +706,90 @@ input::placeholder {
   }
 }
 
+@media screen and (max-width: 606px) {
+  .emoji-list-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    padding: 0px;
+    max-width: 1000px;
+  }
+
+  .emoji-item {
+    width: 49%;
+  }
+
+  .footer-wrapper {
+    margin: 0;
+    padding: 10px 0;
+    align-items: center;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+}
+
+.dropdown {
+  margin: 5px 0 0 5px;
+  justify-content: space-between;
+}
+}
 
 /* responsive */
 @media screen and (min-width: 400px) {
-  header .title {
+  .a .title {
     font-size: 2.5rem;
     padding: 1.5rem;
   }
+}
 
-  .app-container {
-    background-color: #2196F3;
+@media only screen and (max-width: 425px) {
+  .logo-title .title {
+    color: var(--main-color);
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0;
+    transition: var(--transition);
   }
+}
+
+@media only screen and (max-width: 466px) {
+
+
+  .logo-title .title {
+    color: var(--main-color);
+    font-size: 15px;
+    display: none;
+  }
+
+  /* .responsive {display: block !important;} */
+
+  .title-mobile.responsive {
+    display: flex !important;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .score-title {
+    display: flex;
+    flex-basis: 100%;
+  }
+
+  .theme-switch {
+    display: yes;
+  }
+
+  .navbar-container {
+    width: 95%;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+
 }

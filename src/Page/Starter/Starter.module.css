@@ -172,3 +172,8 @@ img.third {
   padding: 0 5px;
   transition: var(--transition);
 }
+
+.toggle {
+  position: fixed;
+  margin: 1rem;
+}

@@ -57,7 +57,10 @@ function Starter() {
                 <a className={a.atag} href='https://github.com/amirrahemi01/emoji-app' target='_blank'>GitHub</a>
             </div>
 
-            <Toggle />
+            <div className={a.toggle}>
+                <Toggle />
+            </div>
+
         </div>
     )
 }

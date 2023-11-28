@@ -3,9 +3,6 @@ import { Emoji } from '../../App'
 
 import popUpSound from '../../Assets/sound.mp3'
 import axios from 'axios';
-import OnePixel from '../Assets/1x1.png'
-import Loader from '../Toggle/Toggle';
-import useLoader from '../../Hooks/Search/useLoader';
 
 
 type Props = Emoji;
@@ -66,9 +63,6 @@ export default function Card({ symbol, keywords, title }: Props) {
   }, []);
 
 
-  const loading = useLoader();
-
-
   function Emoji() {
     return (
       <>
@@ -110,9 +104,7 @@ export default function Card({ symbol, keywords, title }: Props) {
           {isCopied ?
             <div className={`copied-box ${active ? 'active' : 'notactive'}`}>
               <div className='copied-items'>
-                {/* {imageExists ? "" : <p style={{ fontSize: '2.5rem' }}>{symbol}</p>} */}
                 <Emoji />
-
                 <p>Copied!</p>
               </div>
             </div>

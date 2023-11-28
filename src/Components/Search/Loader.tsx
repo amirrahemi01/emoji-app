@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Spinner from '../Assets/spinner.svg'
 
-export default function Loader() {    
+export default function Loader() {
     return (
         <div className="loading-screen">
             <div className='dot'>

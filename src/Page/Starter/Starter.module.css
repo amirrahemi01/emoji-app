@@ -185,20 +185,19 @@ img.third {
     flex-direction: column;
   }
 
-
-
   .left img,
-  .right img, .center img {
+  .right img,
+  .center img {
     display: none;
   }
 
-  .left {width: 0;}
-  .right {width: 100%;}
+  .left {
+    width: 0;
+  }
 
-  /* .right {
-    width: 60%;
-    margin: 0 auto;
-} */
+  .right {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 800px) {

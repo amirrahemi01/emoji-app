@@ -1,6 +1,6 @@
 import React from 'react'
-// components
 
+// components
 import useFetchHook from '../../Hooks/Search/useFetchHook';
 import useSearch from '../../Hooks/Search/useSearch';
 import usePagination from '../../Hooks/Search/usePagination';
@@ -15,14 +15,6 @@ import Toggle from '../../Components/Toggle/Toggle';
 import a from './Emoji.module.css'
 
 function Emoji() {
-
-    // loader
-    // const [loading, setLoading] = useState(true)
-
-    // useEffect(() => {
-    //   setTimeout(() => setLoading(false), 3000)
-    // }, [])
-
     // call API 
     const fetchData = useFetchHook();
 
@@ -45,10 +37,10 @@ function Emoji() {
         <>
             <div className="app-container">
                 {loading && <Loader />}
-                    <div className={a.search_toggle}>
-                        <Toggle />
-                    </div>
-                    <Header />
+                <div className={a.search_toggle}>
+                    <Toggle />
+                </div>
+                <Header />
                 <Search
                     search={setSearchValue}
                     pageChoose={setCurrentPage}

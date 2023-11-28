@@ -1,7 +1,6 @@
 import React from 'react'
 import { Emoji } from '../../App'
 import FooterNavigation from './FooterNavigation';
-import { all } from 'axios';
 
 type Props = {
   pageChoose: (pageNumber: number) => void;

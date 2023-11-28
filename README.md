@@ -60,35 +60,14 @@ The repository could showcase various features, such as:
   <img width="825" src="Screenshot.png">
 </div>
 
-
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for more details.
-
-Check Demo <a href="https://amirrahemi-countdown.vercel.app/" target="_blank">DEMO</a>
-
 ## Run 
 
 ```
 npm i && npm start
 ```
 
+## License
 
-responsive
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for more details.
 
-add some image for buty.
-
-dis allow/ disable onclick for copied box
-
-کوچیک کردن کد و تبدیل بیشتر به کامپوننت
-
-
-gif & screen shot for readme page
-
-change colors and fixed root variables 
-
-easy - hard : gameMode  easy:6 medium:12 expert: 24 master: 48
-onclick sound
-
-refactor code and take comment
+Check Demo <a href="https://amirrahemi-countdown.vercel.app/" target="_blank">DEMO</a>

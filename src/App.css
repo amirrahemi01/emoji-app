@@ -24,7 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
   color: var(--main-color);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: capitalize;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 a {
@@ -91,7 +91,7 @@ header .app-container img {
 
 header .title {
   font-size: 4rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .paragraph {
@@ -662,6 +662,34 @@ input::placeholder {
   align-items: center;
 }
 
+
+.winner-loser {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.win-lose-con {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.win-lose-con button {
+  background: var(--grdnt-txt7);
+  color: var(--main-color);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.win-lose-con h1 {
+  margin:  1rem;
+}
+
 @media screen and (min-width: 768px) {
   .emoji-logo {
     width: 48px;
@@ -717,6 +745,11 @@ input::placeholder {
     max-width: 1000px;
   }
 
+  header .title {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
   .card-container {
     width: 49%;
   }
@@ -729,12 +762,12 @@ input::placeholder {
 
   .footer-nav {
     flex-direction: column;
-}
+  }
 
-.dropdown {
-  margin: 5px 0 0 5px;
-  justify-content: space-between;
-}
+  .dropdown {
+    margin: 5px 0 0 5px;
+    justify-content: space-between;
+  }
 }
 
 /* responsive */
@@ -790,6 +823,4 @@ input::placeholder {
     bottom: 0;
     transform: translateX(-50%);
   }
-
-
 }

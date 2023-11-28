@@ -1,7 +1,7 @@
 import React from 'react'
 
-import WinnerIMG from '../../Assets/winner.jpg'
-import LoserIMG from '../../Assets/lose.jpg'
+import WinnerIMG from '../../Assets/winner.png'
+import LoserIMG from '../../Assets/lose.png'
 import { all } from 'axios';
 
 function WinOrLose({ isWon, onClickPlayAgain, score }: any) {
@@ -10,9 +10,9 @@ function WinOrLose({ isWon, onClickPlayAgain, score }: any) {
     const scoreLable = isWon ? "Best Score" : "Score";
 
     return (
-        <div className='winner-loser'>
+        <div className='winner-loser' style={{overflow: "hidden", marginTop: "2.3rem"}}>
             <div className='win-lose-con'>
-                <h1 className='game-status'>{gameStatus}</h1>
+                <h1 className='game-status' style={isWon ? {color: "#2fff2f"} : {color: "#ff2f2f"}}>{gameStatus}</h1>
                 <p>{scoreLable}</p>
                 <p>{score}/12</p>
 

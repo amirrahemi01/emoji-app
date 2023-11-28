@@ -45,10 +45,10 @@ function Emoji() {
         <>
             <div className="app-container">
                 {loading && <Loader />}
-                <div className={a.search_toggle}>
-                    <Toggle />
-                </div>
-                <Header />
+                    <div className={a.search_toggle}>
+                        <Toggle />
+                    </div>
+                    <Header />
                 <Search
                     search={setSearchValue}
                     pageChoose={setCurrentPage}

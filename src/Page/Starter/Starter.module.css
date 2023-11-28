@@ -177,3 +177,36 @@ img.third {
   position: fixed;
   margin: 1rem;
 }
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+
+
+  .left img,
+  .right img, .center img {
+    display: none;
+  }
+
+  .left {width: 0;}
+  .right {width: 100%;}
+
+  /* .right {
+    width: 60%;
+    margin: 0 auto;
+} */
+}
+
+@media only screen and (max-width: 800px) {
+  .right a {
+    font-size: 2.3rem;
+  }
+
+  .text b {
+    font-size: 20px;
+  }
+}

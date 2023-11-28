@@ -70,4 +70,4 @@ npm i && npm start
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for more details.
 
-Check Demo <a href="https://amirrahemi-countdown.vercel.app/" target="_blank">DEMO</a>
+Check Demo <a href="https://amirrahemi-emoji.vercel.app/" target="_blank">DEMO</a>

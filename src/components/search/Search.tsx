@@ -1,6 +1,6 @@
-import { faMagnifyingGlass, faX, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 
 type Props = {
   search: (text: string) => void;

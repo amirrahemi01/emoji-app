@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Emoji } from '../../App'
 
-import popUpSound from '../../Assets/sound.mp3'
+import popUpSound from '../../assets/sound.mp3'
 import axios from 'axios';
 
 

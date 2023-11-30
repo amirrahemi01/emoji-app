@@ -1,7 +1,7 @@
 import React from 'react'
 
-import WinnerIMG from '../../Assets/winner.png'
-import LoserIMG from '../../Assets/lose.png'
+import WinnerIMG from '../../assets/winner.png'
+import LoserIMG from '../../assets/lose.png'
 
 function WinOrLose({ isWon, onClickPlayAgain, score }: any) {
     const imgUrl = isWon ? WinnerIMG : LoserIMG;

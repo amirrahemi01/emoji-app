@@ -1,5 +1,5 @@
 import React from 'react'
-import Toggle from '../Toggle/Toggle'
+import Toggle from '../toggle/Toggle'
 import { Link } from 'react-router-dom'
 
 export default function NavBar({ currentScore, isGameInProgress, topScore }: any) {

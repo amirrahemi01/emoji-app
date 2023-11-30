@@ -1,6 +1,6 @@
 import React from 'react'
 
-import click from '../../Assets/click.wav'
+import click from '../../assets/click.wav'
 
 export default function Card({ emojiDetails, clickEmoji }: any) {
   const { id, emojiName, emojiUrl } = emojiDetails;

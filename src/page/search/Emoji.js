@@ -1,16 +1,16 @@
 import React from 'react'
 
 // components
-import useFetchHook from '../../Hooks/Search/useFetchHook';
-import useSearch from '../../Hooks/Search/useSearch';
-import usePagination from '../../Hooks/Search/usePagination';
-import useLoader from '../../Hooks/Search/useLoader';
-import Header from '../../Components/Search/Header';
-import Search from '../../Components/Search/Search';
-import Main from '../../Components/Search/Main';
-import Footer from '../../Components/Search/Footer';
-import Loader from '../../Components/Search/Loader';
-import Toggle from '../../Components/Toggle/Toggle';
+import useFetchHook from '../../hooks/search/useFetchHook';
+import useSearch from '../../hooks/search/useSearch';
+import usePagination from '../../hooks/search/usePagination';
+import useLoader from '../../hooks/search/useLoader';
+import Header from '../../components/search/Header';
+import Search from '../../components/search/Search';
+import Main from '../../components/search/Main';
+import Footer from '../../components/search/Footer';
+import Loader from '../../components/search/Loader';
+import Toggle from '../../components/toggle/Toggle';
 
 import a from './Emoji.module.css'
 

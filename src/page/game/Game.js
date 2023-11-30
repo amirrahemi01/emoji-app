@@ -1,12 +1,12 @@
 import React from 'react';
-import EmojiGame from '../../Components/Game/Game';
-import useLoader from '../../Hooks/Search/useLoader';
-import Loader from '../../Components/Search/Loader';
+import EmojiGame from '../../components/game/Game';
+import useLoader from '../../hooks/search/useLoader';
+import Loader from '../../components/search/Loader';
 import emojiData from './data.json'
 
 function Game() {
   const loading = useLoader();
-  
+
   return (
     <div>
       {loading && <Loader />}

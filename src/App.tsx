@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 
 import { Route, Routes } from 'react-router-dom';
-import Starter from './Page/Starter/Starter';
-import Emoji from './Page/Search/Emoji';
-import Game from './Page/Game/Game';
-import Error from './Page/Error/Error';
+import Starter from './page/starter/Starter';
+import Emoji from './page/search/Emoji';
+import Game from './page/game/Game';
+import Error from './page/error/Error';
 
 export type Emoji = {
   keywords: string;

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 import a from './Starter.module.css'
 
-import Image5 from '../../Assets/6.png'
-import Image6 from '../../Assets/7.png'
-import Image7 from '../../Assets/8.png'
+import Image5 from '../../assets/6.png'
+import Image6 from '../../assets/7.png'
+import Image7 from '../../assets/8.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import Toggle from '../../Components/Toggle/Toggle';
+import Toggle from '../../components/toggle/Toggle';
 
 function Starter() {
     return (
